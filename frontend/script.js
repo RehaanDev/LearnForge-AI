@@ -1,4 +1,4 @@
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = "https://learnforge-ai-hy8b.onrender.com";
 const SESSION_KEY = "lf_session_v1";
 
 const STEPS = [
