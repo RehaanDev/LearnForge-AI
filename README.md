@@ -2,38 +2,77 @@
 
 <div align="center">
 
+<img src="https://img.shields.io/badge/IBM-watsonx.ai-blue?style=for-the-badge&logo=ibm" />
+<img src="https://img.shields.io/badge/Python-FastAPI-green?style=for-the-badge&logo=python" />
+<img src="https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS%20%7C%20JavaScript-orange?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Deployment-Netlify-00C7B7?style=for-the-badge&logo=netlify" />
+<img src="https://img.shields.io/badge/Backend-Render-46E3B7?style=for-the-badge&logo=render" />
+<img src="https://img.shields.io/badge/License-Educational-red?style=for-the-badge" />
+
 # LearnForge AI
+
 ### AI-Powered Personalized Career Mentor using IBM watsonx.ai
 
-An intelligent career mentoring platform that generates personalized learning roadmaps, analyzes skill gaps, conducts AI-powered quizzes, and provides career guidance using IBM watsonx.ai Foundation Models.
+An intelligent AI-powered career mentoring platform that generates personalized learning roadmaps, performs skill-gap analysis, conducts AI-powered quizzes, and provides adaptive career guidance using **IBM watsonx.ai Foundation Models (IBM Granite)**.
 
-Developed as part of the **IBM SkillsBuild AICTE Internship Program 2026**
+Developed as part of the **IBM SkillsBuild AICTE Internship 2026**
 
 </div>
 
 ---
 
+# 🌐 Live Demo
+
+### 🚀 Frontend
+
+https://learnforgeai.netlify.app/
+
+### ⚡ Backend API
+
+https://learnforge-ai-hy8b.onrender.com/
+
+### API Base URL
+
+https://learnforge-ai-hy8b.onrender.com
+
+---
+
 # 📖 Overview
 
-LearnForge AI is an AI-powered career mentoring platform designed to help students and aspiring professionals build structured learning paths toward their dream careers.
+LearnForge AI is an AI-powered career mentoring platform built to help students and aspiring professionals learn efficiently through personalized AI-generated learning pathways.
 
-Unlike traditional roadmap websites, LearnForge AI interacts with users conversationally, understands their educational background and career aspirations, and generates personalized recommendations using IBM watsonx.ai Large Language Models.
+Instead of showing generic roadmaps, LearnForge AI first understands the learner through an interactive conversation and then generates a customized roadmap based on:
 
-The application follows a modern Full Stack AI architecture consisting of a responsive frontend, FastAPI backend, and IBM watsonx.ai cloud services.
+- Educational Background
+- Current Skills
+- Programming Languages
+- Career Goal
+- Experience Level
+- Learning Style
+- Daily Study Hours
+- Target Timeline
+
+The roadmap is generated using **IBM watsonx.ai Foundation Models**, enabling dynamic recommendations instead of static predefined content.
+
+The project follows a modern Full Stack AI architecture consisting of a responsive frontend, FastAPI backend, and IBM watsonx.ai cloud services.
 
 ---
 
 # 🎯 Problem Statement
 
-Many students face challenges such as:
+Students often struggle with questions like:
 
-- Not knowing where to begin learning.
-- Choosing the right technologies.
-- Identifying skill gaps.
-- Planning a study schedule.
-- Selecting suitable projects and certifications.
+- Where should I start?
+- Which technologies should I learn first?
+- Which projects should I build?
+- Which certifications are worth doing?
+- How can I prepare for interviews?
+- Which skills am I missing?
+- How should I plan my daily learning?
 
-LearnForge AI solves these challenges by generating customized AI-powered learning roadmaps based on each learner's unique profile.
+Most online roadmap websites provide the same roadmap to everyone.
+
+LearnForge AI solves this problem by generating a personalized roadmap for every learner using AI.
 
 ---
 
@@ -41,125 +80,210 @@ LearnForge AI solves these challenges by generating customized AI-powered learni
 
 ## 🤖 AI Career Mentor
 
-Generate personalized learning roadmaps based on:
+Interactive AI mentor that collects learner information through a conversational interface instead of lengthy forms.
+
+It gathers:
 
 - Name
 - Education
 - Career Goal
-- Existing Skills
+- Current Skills
 - Programming Languages
 - Experience Level
 - Daily Study Hours
 - Preferred Learning Style
-- Target Timeline
+- Learning Timeline
 
 ---
 
-## 📚 Personalized Learning Roadmap
+## 🛣 Personalized AI Learning Roadmap
 
-The AI generates:
+Generate AI-powered learning roadmaps including:
 
 - Skill Assessment
-- Personalized Learning Roadmap
+- Complete Learning Roadmap
 - Weekly Study Plan
 - Recommended Courses
 - Hands-on Projects
 - Certifications
 - Career Tips
+- Learning Resources
 
 ---
 
-## 💬 Interactive Chat Interface
+## 💬 AI Chat Mentor
 
-Instead of traditional forms, LearnForge AI provides an interactive AI conversation where the mentor asks questions one by one before generating recommendations.
+Continue chatting with the AI mentor even after roadmap generation.
+
+Ask questions such as:
+
+- Explain a concept
+- Suggest resources
+- Recommend projects
+- Clarify roadmap steps
+- Career guidance
 
 ---
 
 ## 📊 Skill Gap Analysis
 
-The application compares the student's current skills with the target career and visually highlights areas that need improvement.
+Analyze existing skills against the selected career path.
+
+Provides:
+
+- Current Skill Percentage
+- Target Skill Percentage
+- Missing Skills
+- AI Recommendations
 
 ---
 
 ## 🧠 AI Quiz Generator
 
-Students can test their knowledge through AI-generated quizzes related to their chosen career path.
+Generate AI-powered quizzes based on:
+
+- Selected Career
+- Skills
+- Experience Level
+
+Features:
+
+- Multiple Choice Questions
+- Instant Evaluation
+- Explanations
+- Score Tracking
 
 ---
 
 ## 🎮 Gamification
 
-The platform includes:
+Learning becomes more engaging with:
 
 - XP Points
 - Daily Streak Counter
 - Progress Tracking
+- Achievement Feel
 - Interactive Learning Experience
 
 ---
 
-## 🌗 Dark / Light Theme
+## 📈 Progress Tracking
 
-Users can seamlessly switch between Dark Mode and Light Mode.
+Users can mark roadmap sections as completed.
+
+Features:
+
+- Completion Percentage
+- Visual Progress Bar
+- Continue Learning Button
+- Persistent Progress Storage
+
+---
+
+## 🔄 Continue Learning
+
+Adaptive AI roadmap updates based on completed topics.
+
+The AI suggests:
+
+- Next Topics
+- Revision Areas
+- Advanced Concepts
+- Additional Projects
+
+---
+
+## 💾 Resume Previous Session
+
+Users can continue exactly where they left off.
+
+Session stores:
+
+- User Profile
+- Generated Roadmap
+- Completed Topics
+- Chat History
+
+---
+
+## 🌙 Dark / Light Theme
+
+Switch seamlessly between:
+
+- Dark Theme
+- Light Theme
+
+Theme preference is stored locally.
 
 ---
 
 ## 📥 Export Roadmap
 
-Generated learning roadmaps can be exported in Markdown format for future reference.
+Export generated roadmap as:
+
+- Markdown (.md)
+
+For future reference or documentation.
 
 ---
 
 ## 👨‍💻 Developer Profile
 
-The application includes an integrated developer profile card showcasing project information and contact details.
+Built-in developer card displaying:
+
+- Developer Information
+- LinkedIn
+- Email
+- Project Credits
 
 ---
 
 # 🏗 System Architecture
 
-```
-                 User
+```text
+                    User
 
-                  │
+                      │
 
-                  ▼
+                      ▼
 
       HTML • CSS • JavaScript Frontend
 
-                  │
+          (Hosted on Netlify)
 
-             REST API (Fetch)
+                      │
 
-                  │
+                 REST API
 
-                  ▼
+                      ▼
 
           FastAPI Backend (Python)
 
-                  │
+            (Hosted on Render)
 
-                  ▼
+                      │
 
-     IBM Cloud IAM Authentication
+       IBM Cloud IAM Authentication
 
-                  │
+                      │
 
-                  ▼
+                      ▼
 
-      IBM watsonx.ai Foundation Model
+     IBM watsonx.ai Foundation Models
 
-                  │
+          (IBM Granite LLM)
 
-                  ▼
+                      │
 
-      AI Generated Learning Roadmap
+                      ▼
 
-                  │
+      Personalized Career Guidance
 
-                  ▼
-
-         Interactive User Interface
+       • Learning Roadmap
+       • Skill Gap Analysis
+       • AI Mentor
+       • Adaptive Learning
+       • AI Quiz Generator
 ```
 
 ---
@@ -172,7 +296,8 @@ The application includes an integrated developer profile card showcasing project
 - CSS3
 - JavaScript (ES6)
 - Fetch API
-- Marked.js (Markdown Rendering)
+- Marked.js
+- Local Storage
 
 ---
 
@@ -182,6 +307,7 @@ The application includes an integrated developer profile card showcasing project
 - FastAPI
 - Uvicorn
 - Requests
+- Pydantic
 - python-dotenv
 
 ---
@@ -195,49 +321,59 @@ The application includes an integrated developer profile card showcasing project
 
 ---
 
-## Cloud Platform
+## Cloud Services
 
 - IBM Cloud
 - IBM IAM Authentication
-- IBM Watson Machine Learning APIs
+- IBM Watson Machine Learning API
 
 ---
 
-## Additional Libraries
+## Deployment
 
-The project includes several modern AI and backend libraries for future scalability, including LangChain, ChromaDB, Hugging Face, SQLAlchemy, and IBM Watsonx SDK. requirements.txt
+### Frontend
+
+- Netlify
+
+### Backend
+
+- Render
 
 ---
+
+## Development Tools
+
+- Git
+- GitHub
+- VS Code
+- Postman
+- IBM Cloud
 
 # 📁 Project Structure
 
-```
+```text
 LearnForge-AI/
-
 │
-
 ├── backend/
-
-│   ├── main.py
-
-│   ├── ai.py
-
+│   ├── main.py                 # FastAPI application
+│   ├── ai.py                   # IBM watsonx.ai integration
 │   ├── requirements.txt
-
 │   └── .env
-
 │
-
 ├── frontend/
-
-│   ├── index.html
-
-│   ├── style.css
-
-│   └── script.js
-
+│   ├── index.html              # Main User Interface
+│   ├── style.css               # Styling
+│   ├── script.js               # Frontend Logic
+│   └── assets/
+│       └── img/
+│           └── dev.jpg
 │
-
+├── screenshots/
+│   ├── home.png
+│   ├── roadmap.png
+│   ├── skill-gap.png
+│   └── quiz.png
+│
 └── README.md
 ```
 
@@ -257,24 +393,20 @@ cd LearnForge-AI
 
 ## Create Virtual Environment
 
-```bash
-python3 -m venv venv
-```
-
----
-
-## Activate Virtual Environment
-
-### macOS / Linux
-
-```bash
-source venv/bin/activate
-```
-
 ### Windows
 
 ```bash
+python -m venv venv
+
 venv\Scripts\activate
+```
+
+### Linux / macOS
+
+```bash
+python3 -m venv venv
+
+source venv/bin/activate
 ```
 
 ---
@@ -287,15 +419,15 @@ pip install -r backend/requirements.txt
 
 ---
 
-# 🔐 Configure Environment Variables
+# 🔐 Environment Variables
 
-Create
+Create a file inside
 
 ```
 backend/.env
 ```
 
-Add
+Add the following credentials:
 
 ```env
 IBM_API_KEY=YOUR_API_KEY
@@ -309,13 +441,19 @@ IBM_URL=https://us-south.ml.cloud.ibm.com
 
 # ▶️ Run Backend
 
+Navigate to backend
+
 ```bash
 cd backend
+```
 
+Run FastAPI
+
+```bash
 uvicorn main:app --reload
 ```
 
-Backend runs at
+Backend starts at
 
 ```
 http://127.0.0.1:8000
@@ -325,97 +463,304 @@ http://127.0.0.1:8000
 
 # 🌐 Run Frontend
 
-Open
+Simply open
 
 ```
 frontend/index.html
 ```
 
-or use
+or start a local server
 
 ```bash
-python3 -m http.server
+python -m http.server
 ```
 
 ---
 
-# 🔌 API Endpoints
+# 🚀 Deployment
+
+## Frontend Deployment
+
+Platform
+
+```
+Netlify
+```
+
+Live URL
+
+```
+https://learnforgeai.netlify.app/
+```
+
+---
+
+## Backend Deployment
+
+Platform
+
+```
+Render
+```
+
+Live API
+
+```
+https://learnforge-ai-hy8b.onrender.com/
+```
+
+---
+
+# 🔌 API Documentation
 
 ## GET /
 
-Returns backend status.
+Checks backend status.
+
+Example
+
+```http
+GET /
+```
 
 ---
 
 ## POST /generate
 
-Generates a personalized AI learning roadmap.
+Generate AI-powered personalized learning roadmap.
+
+Example Request
+
+```json
+{
+    "name":"John",
+    "goal":"Frontend Developer"
+}
+```
 
 ---
 
 ## POST /chat
 
-Interactive AI conversation based on the generated roadmap.
+Continue chatting with the AI mentor.
+
+Example
+
+```json
+{
+    "message":"Explain React Hooks"
+}
+```
 
 ---
 
 ## POST /skill-gap
 
-Analyzes the user's skill gaps and provides recommendations.
+Analyze current skills against target career.
+
+Returns
+
+- Current Skill Level
+- Target Skill Level
+- Missing Skills
+- AI Recommendations
 
 ---
 
 ## POST /quiz
 
-Generates an AI-powered quiz based on the user's selected domain.
+Generate AI-powered quiz.
+
+Returns
+
+- Questions
+- Options
+- Correct Answers
+- Explanations
 
 ---
 
-# 🧠 How It Works
+## POST /adapt-roadmap
 
-1. User starts an interactive conversation.
-2. LearnForge AI collects career information.
-3. Frontend sends the data to the FastAPI backend.
-4. Backend authenticates with IBM Cloud IAM.
-5. IBM watsonx.ai processes the prompt.
-6. The Foundation Model generates a personalized roadmap.
-7. Results are displayed inside the interactive chat interface.
-8. Users can continue chatting, analyze skill gaps, or take quizzes.
+Generate adaptive roadmap based on completed learning progress.
+
+Returns
+
+- Updated Roadmap
+- Next Learning Topics
+- Recommended Projects
+- Revision Suggestions
+
+---
+
+# 🔄 Application Workflow
+
+```text
+User Starts Session
+          │
+          ▼
+Interactive AI Conversation
+          │
+          ▼
+Collect User Information
+          │
+          ▼
+FastAPI Backend
+          │
+          ▼
+IBM Cloud Authentication
+          │
+          ▼
+IBM watsonx.ai (Granite)
+          │
+          ▼
+Generate Learning Roadmap
+          │
+          ▼
+Display Interactive Roadmap
+          │
+          ▼
+Continue Learning
+          │
+          ├────────► AI Chat
+          │
+          ├────────► Skill Gap Analysis
+          │
+          ├────────► AI Quiz
+          │
+          └────────► Adaptive Roadmap
+```
+
+---
+
+# 🧠 How LearnForge AI Works
+
+1. User starts an AI conversation.
+
+2. AI collects learner information.
+
+3. Frontend sends data to FastAPI.
+
+4. Backend authenticates with IBM Cloud.
+
+5. IBM watsonx.ai processes prompts.
+
+6. IBM Granite generates a personalized roadmap.
+
+7. Roadmap is displayed interactively.
+
+8. Users continue chatting with AI.
+
+9. Users analyze skill gaps.
+
+10. Users attempt AI-generated quizzes.
+
+11. Progress is stored locally.
+
+12. AI updates learning recommendations as progress increases.
 
 ---
 
 # 📸 Screenshots
 
-Add screenshots here.
+Add screenshots inside
 
 ```
-screenshots/home.png
+screenshots/
+```
 
-screenshots/chat.png
+Example
 
-screenshots/roadmap.png
+```
+screenshots/
 
-screenshots/quiz.png
+home.png
+
+chat.png
+
+roadmap.png
+
+skill-gap.png
+
+quiz.png
+```
+
+Example Markdown
+
+```md
+## Home
+
+![Home](screenshots/home.png)
+
+## AI Chat
+
+![Chat](screenshots/chat.png)
+
+## Roadmap
+
+![Roadmap](screenshots/roadmap.png)
+
+## Skill Gap
+
+![Skill Gap](screenshots/skill-gap.png)
+
+## Quiz
+
+![Quiz](screenshots/quiz.png)
 ```
 
 ---
 
 # 🚀 Future Enhancements
 
-Future versions of LearnForge AI may include:
+Planned improvements include:
 
 - User Authentication
+- Cloud Database
 - Dashboard Analytics
 - Resume Analyzer
 - Resume Builder
-- Interview Preparation
+- AI Interview Preparation
 - Coding Challenge Generator
-- Internship Recommendation System
-- Progress Dashboard
+- Internship Recommendation Engine
+- Certificate Tracker
+- Learning Dashboard
 - PDF Export
-- AI Document Analysis
-- Mobile Responsive Improvements
+- AI Voice Mentor
 - Multi-language Support
+- Mobile Responsive Improvements
+- Mobile Application
+- Learning Notifications
+- Team Collaboration
+- AI Learning Analytics
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork this repository.
+
+2. Create a new branch.
+
+```bash
+git checkout -b feature-name
+```
+
+3. Commit your changes.
+
+```bash
+git commit -m "Added new feature"
+```
+
+4. Push your branch.
+
+```bash
+git push origin feature-name
+```
+
+5. Create a Pull Request.
 
 ---
 
@@ -423,15 +768,31 @@ Future versions of LearnForge AI may include:
 
 ## Muhammad Rehan Madarsaheb Jamadar
 
-**IBM SkillsBuild AICTE Intern**
+**B.Tech Computer Science & Engineering Student**
 
-📧 Primary Email
+**IBM SkillsBuild AICTE Internship 2026**
 
+Developer of **LearnForge AI**
+
+### Contact
+
+📧 Primary
+
+```
 connect.rehan@outlook.in
+```
 
-📧 Secondary Email
+📧 Secondary
 
+```
 jamadarmdrehaan@gmail.com
+```
+
+### LinkedIn
+
+```
+https://www.linkedin.com/in/mdrehan08
+```
 
 ---
 
@@ -453,10 +814,11 @@ INTERNSHIP_177763906469f49e98e105d
 
 # 🙏 Acknowledgements
 
-This project was developed using:
+This project was developed using
 
 - IBM SkillsBuild
 - IBM watsonx.ai
+- IBM Granite Foundation Models
 - IBM Cloud
 - AICTE
 - FastAPI
@@ -466,12 +828,26 @@ This project was developed using:
 - JavaScript
 - Open Source Community
 
+Special thanks to IBM SkillsBuild and AICTE for providing the opportunity to build real-world AI applications during the internship.
+
 ---
 
 # 📜 License
 
-This project is developed for educational, learning, and internship purposes.
+This project was developed as part of the **IBM SkillsBuild AICTE Internship 2026**.
 
-© 2026 Muhammad Rehan Madarsaheb Jamadar
+Copyright © 2026
 
-All Rights Reserved.
+**Muhammad Rehan Madarsaheb Jamadar**
+
+This project is intended for educational, research, and demonstration purposes.
+
+---
+
+<div align="center">
+
+### ⭐ If you found this project helpful, don't forget to Star this repository!
+
+Made with ❤️ using **IBM watsonx.ai**, **FastAPI**, and **JavaScript**
+
+</div>
