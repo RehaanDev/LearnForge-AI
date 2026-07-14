@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LearnForge AI — Your AI Career Mentor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- textured SVG background -->
+  <div class="bg-texture" aria-hidden="true">
+    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="linegrid" width="52" height="52" patternUnits="userSpaceOnUse">
+          <path d="M 52 0 L 0 0 0 52" fill="none" stroke="currentColor" stroke-width="0.6"/>
+        </pattern>
+        <pattern id="dotgrid" width="26" height="26" patternUnits="userSpaceOnUse">
+          <circle cx="1.4" cy="1.4" r="1.1" fill="currentColor"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#linegrid)" class="grid-layer"/>
+      <rect width="100%" height="100%" fill="url(#dotgrid)" class="dot-layer"/>
+    </svg>
+    <div class="scanline"></div>
+    <div class="vignette"></div>
+  </div>
+
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span class="brand-name">LearnForge<span class="brand-ai">.AI</span></span>
+      </div>
+      <div class="topbar-right">
+        <div class="stat-pill" id="streakPill" title="Daily streak">🔥<span id="streakCount">0</span></div>
+        <div class="stat-pill" id="xpPill" title="Mentor XP">XP&nbsp;<span id="xpCount">0</span></div>
+        <button class="icon-btn" id="devBtn" aria-label="About the developer" title="About the developer">&lt;/&gt;</button>
+        <button class="icon-btn theme-btn" id="themeToggle" aria-label="Toggle theme" aria-pressed="false">
+          <span class="theme-track"><span class="theme-thumb"></span></span>
+        </button>
+      </div>
+      <div class="progress-strip hidden" id="progressStrip">
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      <div class="progress-label"><span id="progressPercent">0</span>% roadmap complete</div>
+    </div>
+    </header>
+
+    <main class="chat-shell">
+      <div class="chat-window" id="chatWindow"></div>
+
+      <form class="composer" id="composerForm">
+        <div class="quick-actions hidden" id="quickActions">
+          <button type="button" class="chip-action" data-action="skillgap">skill --gap</button>
+          <button type="button" class="chip-action" data-action="quiz">quiz --start</button>
+          <button type="button" class="chip-action" data-action="export">export --md</button>
+          <button type="button" class="chip-action continue-chip" data-action="continue">▶ continue --learning</button>
+          <button type="button" class="chip-action" data-action="restart">restart --new</button>
+        </div>
+        <div class="composer-row">
+          <span class="composer-prompt">&gt;</span>
+          <input type="text" id="composerInput" placeholder="Type your answer..." autocomplete="off">
+          <button type="submit" class="send-btn" id="sendBtn" aria-label="Send">↵</button>
+        </div>
+      </form>
+
+      <div class="dev-watermark">
+        Made with ❣️ by <button type="button" class="dev-watermark-link" id="devWatermarkBtn">Muhammad Rehan</button>
+      </div>
+    </main>
+  </div>
+
+  <!-- developer profile card -->
+  <div class="dev-overlay" id="devOverlay">
+    <div class="dev-card">
+      <button class="dev-close" id="devClose" aria-label="Close">✕</button>
+
+      <div class="dev-photo-wrap">
+        <img src="assets/img/dev.jpg" alt="Muhammad Rehan Madarsaheb Jamadar" class="dev-photo">
+        <span class="dev-status" title="Available"></span>
+      </div>
+
+      <div class="dev-name">Muhammad Rehan<span class="dev-lastname">Madarsaheb Jamadar</span></div>
+      <div class="dev-role">Student @ VTU <span class="dot-sep">·</span> Builder of LearnForge AI</div>
+
+      <div class="dev-terminal">
+        <div class="dev-line"><span class="dev-key">$</span> whoami</div>
+        <div class="dev-line dev-out">Full-Stack + Software Developer, forever debugging something</div>
+      </div>
+
+      <div class="dev-links">
+        <a class="dev-link" href="https://www.linkedin.com/in/mdrehan08" target="_blank" rel="noopener">
+          <span class="dev-link-label">LinkedIn</span>
+          <span class="dev-link-value">/in/mdrehan08</span>
+        </a>
+        <button type="button" class="dev-link copy-link" data-copy="connect.rehan@outlook.in">
+          <span class="dev-link-label">Email</span>
+          <span class="dev-link-value">connect.rehan@outlook.in</span>
+        </button>
+        <button type="button" class="dev-link copy-link" data-copy="jamadarmdrehaan@gmail.com">
+          <span class="dev-link-label">Email (alt)</span>
+          <span class="dev-link-value">jamadarmdrehaan@gmail.com</span>
+        </button>
+      </div>
+
+      <div class="dev-footer">built with watsonx.ai · FastAPI · way too much coffee</div>
+    </div>
+  </div>
+
+  <div class="confetti-layer" id="confettiLayer"></div>
+  <div class="toast" id="toast"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
